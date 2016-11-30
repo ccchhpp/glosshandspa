@@ -6,6 +6,9 @@ body {
     height: 100%;
 }
 
+.header{
+    margin-top: 30px;
+}
 .logo .img-responsive{
     margin: 0 auto;
     width: 50%;
@@ -14,11 +17,12 @@ body {
 
 .red-divider{
     height: 2px;
-    border-top: 2px solid #c42228;
+    background-color: #c42228;
     margin-top: 5px;
     margin-bottom: 5px;
     margin: 0 auto;
     width: 90%;
+    padding: 0;
 }
 
 .message{
@@ -26,11 +30,11 @@ body {
     margin-top: 10px;
 }
 
-.info{
+.footer{
     position: absolute;
     bottom: 0;
     margin: 0 auto;
     width: 100%;
-    text-align: center;
     margin-bottom: 10px;
+    text-align: center;
 }
