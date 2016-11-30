@@ -14,9 +14,9 @@ body {
 .navbar > a {
     display: inline;
     margin: 5px;
-    font-size: 15pt;
-    
+    font-size: 15pt;   
 }
+
 /* navbar hover */
 .navbar-page {
     position: relative;
