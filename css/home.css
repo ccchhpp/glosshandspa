@@ -1,0 +1,55 @@
+.header{
+    position: relative;
+    margin-top: 15px;
+}
+.logo{
+    margin: 0 auto;
+    text-align: center;
+}
+.logo > a{
+    display: inline-block;
+    width: 50%;
+    max-width: 250px;
+}
+
+.img-responsive{
+    width: 100%; 
+}
+
+.social-media{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 5%;
+    margin-bottom: 5px;
+}
+
+.social-media > a{
+    display: inline;
+    margin: 3px;
+    color: white;
+    text-decoration: none;
+}
+
+.red-divider{
+    height: 2px;
+    background-color: #c42228;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0;
+}
+
+.address .phone {
+    font-size: 12px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
