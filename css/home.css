@@ -31,6 +31,9 @@
     text-decoration: none;
 }
 
+.navbar{
+    margin-bottom: 0px;
+}
 .red-divider{
     height: 2px;
     background-color: #c42228;
