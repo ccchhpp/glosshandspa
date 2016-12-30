@@ -36,9 +36,9 @@
     }
 }
 
-/* BODY PANEL */
-#body-panel{
-    min-height: 50%;
+/* INFO PANEL */
+#info-panel{
+    height: 50%;
     background-color: whitesmoke;
     color: black;
     text-align: center;

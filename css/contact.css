@@ -1,0 +1,30 @@
+#body-panel > iframe{
+    margin: auto;
+}
+
+#contact-info{
+    float: left;
+    width: 50%;
+}
+
+#map{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#map > iframe{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#contact-info > a{
+    text-decoration: none;
+    color: black;
+}
+
+#contact-info > a > i{
+    margin-right: 10px;
+}
