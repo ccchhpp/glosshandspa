@@ -28,3 +28,13 @@
 #contact-info > a > i{
     margin-right: 10px;
 }
+
+@media (max-width: 600px){
+    #contact-info{
+        width: 100%;
+    }
+    #map {
+        width: 100%;
+        height: 50%;
+    }
+}
