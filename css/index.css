@@ -11,8 +11,7 @@
 .image-carousel{
     width: 40vw;
     margin: 0 auto;
-    border: solid 2px black;
-    border-radius: 5px;
+    border: solid 5px black;
 }
 
 .image > img{
@@ -22,7 +21,7 @@
 @media (max-width: 600px){
     .image-carousel{
         width: 80vw;
-        border: solid 2px black;
+        border: solid 3px black;
     }
 
     .image > img{
