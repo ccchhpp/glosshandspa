@@ -14,10 +14,11 @@
 }
 
 #map > iframe{
-    width: 90%;
-    height: 90%;
+    width: 40vw;
+    height: 50vh;
     margin: 0 auto;
     margin-top: 10px;
+    margin-right: 10px;
 }
 
 #contact-info > a{
@@ -33,8 +34,15 @@
     #contact-info{
         width: 100%;
     }
-    #map {
+    
+    #map{
         width: 100%;
-        height: 50%;
+        margin-top: 10px;
+    }
+    
+    #map > iframe{
+        margin: 0 auto;
+        width: 90vw;
+        height: 50vw;
     }
 }
