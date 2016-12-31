@@ -10,8 +10,14 @@
 .my-gallery figure {
     display: inline-block;
     margin: 0 5px 5px 0;
-    width: 150px;
+    width: 200px;
 }
 .my-gallery figcaption {
     display: none;
+}
+
+@media (max-width: 475px){
+   .my-gallery figure {
+        width: 150px;
+} 
 }
