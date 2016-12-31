@@ -9,12 +9,23 @@
 }
 
 .image-carousel{
-    width: 50vw;
+    width: 40vw;
     margin: 0 auto;
     border: solid 2px black;
     border-radius: 5px;
 }
 
 .image > img{
-    width: 50vw;
+    width: 40vw;
+}
+
+@media (max-width: 600px){
+    .image-carousel{
+        width: 80vw;
+        border: solid 2px black;
+    }
+
+    .image > img{
+        width: 80vw;
+    }
 }
