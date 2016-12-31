@@ -9,6 +9,9 @@
         <!-- font awesome -->
         <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
         
+        <!-- jQuery -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        
         <!-- PhotoSwipe -->
         <link rel="stylesheet" href="PhotoSwipe/photoswipe.css"> 
         <link rel="stylesheet" href="PhotoSwipe/default-skin/default-skin.css"> 
@@ -46,48 +49,225 @@
                         <img class="img-responsive" src="images/logo-white.svg" alt="images/logo-full.png">
                     </a>
                 </div>
-                <div class="navbar">
-                    <a class="navbar-page" href="/">Home</a>
-                    <a class="navbar-page" href="/services">Services</a>
-                    <a class="navbar-selected" href="/gallery">Gallery</a>
-                    <a class="navbar-page" href="/contact">Contact</a>
+                <div class="navbar" id="navbar">
+                    <div class="navbar-pages">
+                        <a class="navbar-page" href="/">Home</a>
+                        <a class="navbar-page" href="/services">Services</a>
+                        <a class="navbar-selected" href="/gallery">Gallery</a>
+                        <a class="navbar-page" href="/contact">Contact</a>
+                    </div>
                 </div>
             </div>
             <div id="body-panel">
                 <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-
+                    
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                      <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
-                          <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" />
-                      </a>
-                                                          <figcaption itemprop="caption description">Image caption  1</figcaption>
-
+                        <a href="photos/storefront.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/storefront.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Store Front</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/front.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/front.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description"> Front</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/inside-1.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/inside-1.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Inside</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/inside-2.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/inside-2.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Inside</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/inside-3.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/inside-3.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Inside</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/reception.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/reception.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Reception</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/wall-1.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/wall-1.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Inside </figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/wall-2.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/wall-2.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Inside</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/wall-3.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/wall-3.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Inside</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/wall-4.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/wall-4.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Inside</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/hallway.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/hallway.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Hallway</figcaption>
+                    </figure>
+                    
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/massage-1.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/massage-1.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Massage</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/massage-2.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/massage-2.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Massage</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/lotions.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/lotions.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Lotions</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/towel-arrange.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/towel-arrange.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Arranged Towels</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/towels.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/towels.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Towels</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/colors.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/colors.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Colors</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/cards.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/cards.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Cards</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/coffee.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/coffee.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Coffee</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/drinks.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/drinks.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Drinks</figcaption>
+                    </figure>
+                        
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/menucover.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/menucover.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Menu Cover</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/menu.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/menu.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Menu</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/view-outside.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/view-outside.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Outside View</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/supplies.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/supplies.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Supplies</figcaption>
+                    </figure>
+                             
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/mugs.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/mugs.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Mugs</figcaption>
+                    </figure>
+                                
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/bowls.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/bowls.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Bowls</figcaption>
+                    </figure>
+                    
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="photos/towel-warmer.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/towel-warmer.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Towel Warmer</figcaption>
                     </figure>
 
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                      <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
-                          <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
-                      </a>
-                      <figcaption itemprop="caption description">Image caption 2</figcaption>
+                        <a href="photos/air-purifier.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/air-purifier.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Air Purifier</figcaption>
                     </figure>
-
+                    
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                      <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
-                          <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
-                      </a>
-                      <figcaption itemprop="caption description">Image caption 3</figcaption>
+                        <a href="photos/autoclave.JPG" itemprop="contentUrl" data-size="5184x3456">
+                            <img src="photos/autoclave.JPG" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Autoclave</figcaption>
                     </figure>
-
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                      <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl" data-size="1024x768">
-                          <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
-                      </a>
-                      <figcaption itemprop="caption description">Image caption 4</figcaption>
-                    </figure>
-
                 </div>
             </div>
-            <div id="footer-panel" class="panel">
+        </div>
+        <div id="footer-panel">
                 <div id="footer-divider"></div>
                 <div id="contact-footer">
                     <b>Contact us</b><br>
@@ -105,7 +285,6 @@
                     </a>
                 </div>
             </div>
-        </div>
         
         <!-- Root element of PhotoSwipe. Must have class pswp. -->
         <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -137,10 +316,6 @@
 
                         <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
-                        <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
                         <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
                         <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
@@ -152,10 +327,6 @@
                               </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                        <div class="pswp__share-tooltip"></div> 
                     </div>
 
                     <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
@@ -381,6 +552,21 @@
 
             // execute above function
             initPhotoSwipeFromDOM('.my-gallery');
+        </script>
+        
+        <!-- Fixed navbar on scroll -->
+        <script>
+            $(document).ready(function(){
+                var navHeight = $("#navbar").offset().top;
+                $(window).bind('scroll', function(){
+                    if($(window).scrollTop() > navHeight){
+                        $("#navbar").addClass('fixed');
+                    }
+                    else{
+                        $('#navbar').removeClass('fixed');
+                    }
+                })
+            })
         </script>
     </body>
 </html>

@@ -9,6 +9,9 @@
         <!-- font awesome -->
         <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
         
+        <!-- jQuery -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        
         <!-- css -->
         <link href="css/stylesheet.css" rel="stylesheet">
         <link href="css/page.css" rel="stylesheet">
@@ -39,14 +42,16 @@
                         <img class="img-responsive" src="images/logo-white.svg" alt="images/logo-full.png">
                     </a>
                 </div>
-                <div class="navbar">
-                    <a class="navbar-page" href="/">Home</a>
-                    <a class="navbar-selected" href="/services">Services</a>
-                    <a class="navbar-page" href="/gallery">Gallery</a>
-                    <a class="navbar-page" href="/contact">Contact</a>
+                <div class="navbar" id="navbar">
+                    <div class="navbar-pages">
+                        <a class="navbar-page" href="/">Home</a>
+                        <a class="navbar-selected" href="/services">Services</a>
+                        <a class="navbar-page" href="/gallery">Gallery</a>
+                        <a class="navbar-page" href="/contact">Contact</a>
+                    </div>
                 </div>
             </div>
-            <div id="body-panel" class="panel">
+            <div id="body-panel">
                 <div id="glosshands">
                     <b>Gloss Hands</b><br>
                     <i>*all services can have an optional additional 15 minute massage - 15 </i><br>
@@ -75,24 +80,39 @@
                 </div>
                                     
             </div>
-            <div id="footer-panel" class="panel">
-                <div id="footer-divider"></div>
-                <div id="contact-footer">
-                    <b>Contact us</b><br>
-                    <a href="https://www.google.com/maps/place/7553+Girard+Ave,+La+Jolla,+CA+92037/@32.8415226,-117.2747597,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc03e3936f4167:0x6736c78ae6fecdd4!8m2!3d32.8415226!4d-117.272571" target="_blank"><i class="fa fa-home fa-lg"></i>7553 Girard Ave. La Jolla, California</a><br>
-                    <a href="tel:+1-858-412-4450"><i class="fa fa-phone fa-lg"></i>(858) 412-4450</a> <br>
-                    <a href="mailto:glosshandspa@gmail.com"><i class="fa fa-envelope"></i>glosshandspa@gmail.com</a>
-                </div>
-                <div id="socialmedia-footer">
-                    <b>Follow us on</b><br>
-                    <a href="https://www.facebook.com/GlossHandSpa/" target="_blank">
-                        <i class="fa fa-facebook-square fa-lg"></i>
-                    </a>
-                    <a href="https://www.instagram.com/glosshandspa/" target="_blank">
-                        <i class="fa fa-instagram fa-lg"></i>
-                    </a>
-                </div>
+        </div>
+        <div id="footer-panel">
+            <div id="footer-divider"></div>
+            <div id="contact-footer">
+                <b>Contact us</b><br>
+                <a href="https://www.google.com/maps/place/7553+Girard+Ave,+La+Jolla,+CA+92037/@32.8415226,-117.2747597,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc03e3936f4167:0x6736c78ae6fecdd4!8m2!3d32.8415226!4d-117.272571" target="_blank"><i class="fa fa-home fa-lg"></i>7553 Girard Ave. La Jolla, California</a><br>
+                <a href="tel:+1-858-412-4450"><i class="fa fa-phone fa-lg"></i>(858) 412-4450</a> <br>
+                <a href="mailto:glosshandspa@gmail.com"><i class="fa fa-envelope"></i>glosshandspa@gmail.com</a>
+            </div>
+            <div id="socialmedia-footer">
+                <b>Follow us on</b><br>
+                <a href="https://www.facebook.com/GlossHandSpa/" target="_blank">
+                    <i class="fa fa-facebook-square fa-lg"></i>
+                </a>
+                <a href="https://www.instagram.com/glosshandspa/" target="_blank">
+                    <i class="fa fa-instagram fa-lg"></i>
+                </a>
             </div>
         </div>
+        
+        <!-- Fixed navbar on scroll -->
+        <script>
+            $(document).ready(function(){
+                var navHeight = $("#navbar").offset().top;
+                $(window).bind('scroll', function(){
+                    if($(window).scrollTop() > navHeight){
+                        $("#navbar").addClass('fixed');
+                    }
+                    else{
+                        $('#navbar').removeClass('fixed');
+                    }
+                })
+            })
+        </script> 
     </body>
 </html>

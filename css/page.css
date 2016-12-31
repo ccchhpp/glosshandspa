@@ -1,44 +1,5 @@
-/* HEADER PANEL */
-#header-panel{
-    position: relative;
-    background-color: black;
-}
-
-#logo{
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-}
-
-#logo > a{
-    display: inline-block;
-    margin-top: 5%;
-    width: 400px;
-    width: 50vw;
-    max-width: 400px;
-    max-height: 25%;
-}
-
-.navbar{
-    margin-top: 20px;
-    padding-bottom: 40px;
-}
-
-.navbar > a{
-    font-size: 25px;
-}
-
-/* mobile */
-@media (max-width: 600px){
-    .navbar > a{
-        font-size: 14px;
-        font-size: calc(12px + 1vw);
-    }
-}
-
 /* BODY PANEL */
 #body-panel{
-    min-height: 50%;
     background-color: whitesmoke;
     color: black;
     text-align: center;

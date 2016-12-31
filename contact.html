@@ -9,6 +9,9 @@
         <!-- font awesome -->
         <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
         
+        <!-- jQuery -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        
         <!-- css -->
         <link href="css/stylesheet.css" rel="stylesheet">
         <link href="css/page.css" rel="stylesheet">
@@ -40,14 +43,16 @@
                         <img class="img-responsive" src="images/logo-white.svg" alt="images/logo-full.png">
                     </a>
                 </div>
-                <div class="navbar">
-                    <a class="navbar-page" href="/">Home</a>
-                    <a class="navbar-page" href="/services">Services</a>
-                    <a class="navbar-page" href="/gallery">Gallery</a>
-                    <a class="navbar-selected" href="/contact">Contact</a>
+                <div class="navbar" id="navbar">
+                    <div class="navbar-pages">
+                        <a class="navbar-page" href="/">Home</a>
+                        <a class="navbar-page" href="/services">Services</a>
+                        <a class="navbar-page" href="/gallery">Gallery</a>
+                        <a class="navbar-selected" href="/contact">Contact</a>
+                    </div>
                 </div>
             </div>
-            <div id="body-panel" class="panel">
+            <div id="body-panel">
                 <div id="contact-info"> <br>
                     <b>Contact Information</b><br>
                     <a href="https://www.google.com/maps/place/7553+Girard+Ave,+La+Jolla,+CA+92037/@32.8415226,-117.2747597,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc03e3936f4167:0x6736c78ae6fecdd4!8m2!3d32.8415226!4d-117.272571" target="_blank"><i class="fa fa-home fa-lg"></i>7553 Girard Ave. La Jolla, California</a><br>
@@ -61,7 +66,8 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.140834443319!2d-117.27475968429927!3d32.84152258095266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc03e3936f4167%3A0x6736c78ae6fecdd4!2s7553+Girard+Ave%2C+La+Jolla%2C+CA+92037!5e0!3m2!1sen!2sus!4v1483074316750" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
-            <div id="footer-panel" class="panel">
+        </div>
+        <div id="footer-panel">
                 <div id="footer-divider"></div>
                 <div id="contact-footer">
                     <b>Contact us</b><br>
@@ -79,6 +85,20 @@
                     </a>
                 </div>
             </div>
-        </div>
+        
+        <!-- Fixed navbar on scroll -->
+        <script>
+            $(document).ready(function(){
+                var navHeight = $("#navbar").offset().top;
+                $(window).bind('scroll', function(){
+                    if($(window).scrollTop() > navHeight){
+                        $("#navbar").addClass('fixed');
+                    }
+                    else{
+                        $('#navbar').removeClass('fixed');
+                    }
+                })
+            })
+        </script>
     </body>
 </html>

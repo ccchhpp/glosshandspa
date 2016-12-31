@@ -8,6 +8,13 @@
         <!-- font awesome -->
         <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
         
+        <!-- jQuery -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        
+        <!-- slick -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        
         <!-- css -->
         <link href="css/stylesheet.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
@@ -38,17 +45,26 @@
                         <img class="img-responsive" src="images/logo-white.svg" alt="images/logo-full.png">
                     </a>
                 </div>
-                <div class="navbar">
+               <div class="navbar" id="navbar">
+                <div class="navbar-pages">
                     <a class="navbar-selected" href="/">Home</a>
                     <a class="navbar-page" href="/services">Services</a>
                     <a class="navbar-page" href="/gallery">Gallery</a>
                     <a class="navbar-page" href="/contact">Contact</a>
                 </div>
             </div>
-            <div id="info-panel" class="panel">
-                Opening Soon!
             </div>
-            <div id="footer-panel" class="panel">
+            <div id="info-panel">
+                <div class="image-carousel">
+                    <div class="image"><img src="photos/front.JPG"></div>
+                    <div class="image"><img src="photos/inside-1.JPG"></div>
+                    <div class="image"><img src="photos/inside-2.JPG"></div>
+                    <div class="image"><img src="photos/inside-3.JPG"></div>
+                    <div class="image"><img src="photos/storefront.JPG"></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-panel">
                 <div id="footer-divider"></div>
                 <div id="contact-footer">
                     <b>Contact us</b><br>
@@ -66,6 +82,32 @@
                     </a>
                 </div>
             </div>
-        </div>
+        <!-- Fixed navbar on scroll -->
+        <script>
+            $(document).ready(function(){
+                var navHeight = $("#navbar").offset().top;
+                $(window).bind('scroll', function(){
+                    if($(window).scrollTop() > navHeight){
+                        $("#navbar").addClass('fixed');
+                    }
+                    else{
+                        $('#navbar').removeClass('fixed');
+                    }
+                })
+            })
+        </script>
+        
+        <!-- slick -->
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.image-carousel').slick({
+                    infinite: true,
+                    autoplay: true,
+                    arrows: false,
+                    slidesToShow: 1
+                });
+            });
+        </script>
     </body>
 </html>
