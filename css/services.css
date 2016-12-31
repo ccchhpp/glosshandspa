@@ -1,19 +1,28 @@
-.menu{
-    display: inline-block;
-    margin: 10px;
-}
-
-.menu > img{
-    width: 40vw;
-    border: solid 0.3vw black;
-}
-
 #body-panel{
     margin-top: 10px;
 }
 
+.my-gallery {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+.my-gallery img {
+    width: 100%;
+    height: auto;
+}
+.my-gallery figure {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    width: 20vw;
+    border: solid 2px black;
+}
+.my-gallery figcaption {
+    display: none;
+}
+
 @media (max-width: 600px){
-    .menu > img{
+.my-gallery figure{
         width: 40vw;
         border: solid 0.5vw black;
     }
