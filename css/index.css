@@ -9,12 +9,12 @@
 }
 
 .image-carousel{
-    width: 500px;
+    width: 50vw;
     margin: 0 auto;
-    border: solid 10px black;
+    border: solid 2px black;
     border-radius: 5px;
 }
 
 .image > img{
-    width: 500px;
+    width: 50vw;
 }
