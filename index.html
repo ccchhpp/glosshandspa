@@ -20,7 +20,7 @@
         <link href="css/index.css" rel="stylesheet">
         
         <!-- font -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
         
         <!-- favicon -->
         <link rel="icon" type="image/png" href="favicon.png" sizes="192x192">
@@ -46,22 +46,38 @@
                     </a>
                 </div>
                <div class="navbar" id="navbar">
-                <div class="navbar-pages">
-                    <a class="navbar-selected" href="/">Home</a>
-                    <a class="navbar-page" href="/services">Services</a>
-                    <a class="navbar-page" href="/gallery">Gallery</a>
-                    <a class="navbar-page" href="/contact">Contact</a>
+                    <div class="navbar-pages">
+                        <a class="navbar-selected" href="/">Home</a>
+                        <a class="navbar-page" href="/services">Services</a>
+                        <a class="navbar-page" href="/gallery">Gallery</a>
+                        <a class="navbar-page" href="/contact">Contact</a>
+                    </div>
                 </div>
             </div>
+            <div id="carousel-panel">
+                <table>
+                    <td>
+                        <div class="image-carousel">
+                            <div class="image"><img src="photos/front.JPG"></div>
+                            <div class="image"><img src="photos/wall-1.jpg"></div>
+                            <div class="image"><img src="photos/view-outside.jpg"></div>
+                            <div class="image"><img src="photos/reception.jpg"></div>
+                            <div class="image"><img src="photos/storefront.JPG"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-carousel">
+                            <div class="text"><span>At Gloss, we are dedicated to providing you with a luxurious spa experience.</span></div>
+                            <div class="text"><span>We offer a wide variety of services including manicures, pedicures, and massages.</span></div>
+                            <div class="text"><span>Located in the middle of La Jolla, minutes away from the beautiful beach!</span></div>
+                            <div class="text"><span>Call us to schedule an appointment! <br>Walk-ins welcome.</span></div>
+                            <div class="text"><span>Visit us today!</span></div>
+                        </div>
+                    </td>
+                </table>
             </div>
             <div id="info-panel">
-                <div class="image-carousel">
-                    <div class="image"><img src="photos/front.JPG"></div>
-                    <div class="image"><img src="photos/inside-1.JPG"></div>
-                    <div class="image"><img src="photos/inside-2.JPG"></div>
-                    <div class="image"><img src="photos/inside-3.JPG"></div>
-                    <div class="image"><img src="photos/storefront.JPG"></div>
-                </div>
+                <a></a>
             </div>
         </div>
         <div id="footer-panel">
@@ -101,14 +117,30 @@
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
+                $('.text-carousel').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    asNavFor: '.image-carousel',
+                    speed: 1000,
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                });
+            });
+            $(document).ready(function(){
                 $('.image-carousel').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
                     infinite: true,
                     autoplay: true,
                     autoplaySpeed: 5000,
                     speed: 1000,
-                    arrows: false,
-                    dots: true,
-                    slidesToShow: 1
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                    asNavFor: '.text-carousel'
                 });
             });
         </script>
