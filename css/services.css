@@ -15,8 +15,8 @@
     display: inline-block;
     margin: 0 10px 10px 0;
     width: 20vw;
-    border: solid 2px black;
-    border-radius: 5px;
+    border: solid 3px black;
+    border-radius: 2px;
 }
 .my-gallery figcaption {
     display: none;
@@ -25,6 +25,6 @@
 @media (max-width: 700px){
 .my-gallery figure{
         width: 40vw;
-        border: solid 0.5vw black;
+        border: solid 0.6vw black;
     }
 }
