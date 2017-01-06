@@ -44,7 +44,7 @@ table{
     font-size: 2vw;
     font-family: 'Raleway', sans-serif;
     vertical-align: middle;
-    padding: 20px 10px;
+    padding: 100px 10px;
 }
 
 @media(max-width: 1000px){
@@ -62,6 +62,17 @@ table{
     margin: 0 auto;
 }
 
+.image-carousel:hover > .slick-prev{
+    visibility: visible;
+}
+.image-carousel:hover > .slick-next{
+    visibility: visible;
+}
+
+/* overlay arrows in carousel */
+.slick-prev { left: 10px; z-index: 999; visibility: hidden; }
+.slick-next { right: 10px; z-index: 999; visibility: hidden; }
+
 .image > img{
     width: 100%;
 }
@@ -72,22 +83,6 @@ table{
     font-family: 'Raleway', sans-serif;
 }
 
-#marquee{
-    background: #c42228;
-    text-align: center;
-}
-
-#marquee-text {
-    padding: 10px;
-}
-
-@media(max-width: 600px){
-    #marquee-text{
-        font-size: 10pt;
-    }
-}
-
-
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -95,6 +90,7 @@ table{
     background: white;
 }
 
+/* center text carousel */
 .slick-initialized .slick-slide {
     float: none;
     display: inline-block;

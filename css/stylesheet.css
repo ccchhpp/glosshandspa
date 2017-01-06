@@ -1,3 +1,22 @@
+/* SITE-WIDE MARQUEE */
+#marquee{
+    background: #c42228;
+    text-align: center;
+}
+#marquee-text:after{
+    content: "$20 off a gel manicure and original pedicure when you mention the promotion on the site!";
+}
+#marquee-text {
+    padding: 10px;
+}
+@media(max-width: 600px){
+    #marquee-text{
+        font-size: 10pt;
+    }
+}
+/* END OF MARQUEE */
+
+
 /* CONTAINS GLOBAL CSS */
 
 * {
