@@ -4,7 +4,7 @@
     text-align: center;
 }
 #marquee-text:after{
-    content: "$20 off a gel manicure and original pedicure when you mention the promotion on the site!";
+    content: "$20 off an original manicure and pedicure when you mention the promotion on the site!";
 }
 #marquee-text {
     padding: 10px;
