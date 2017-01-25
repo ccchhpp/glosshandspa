@@ -4,7 +4,7 @@
     text-align: center;
 }
 #marquee-text:after{
-    content: "$20 off an original manicure and pedicure bundle when you mention the promotion on the site!";
+    content: "$10 off ($50 minimum) when you mention the promotion on the site!";
 }
 #marquee-text {
     padding: 10px;
