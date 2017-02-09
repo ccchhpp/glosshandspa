@@ -18,8 +18,10 @@
 
 /* INFO PANEL */
 #carousel-panel{
+    position: relative;
     background-color: whitesmoke;
     height: auto;
+    overflow: hidden;
 }
 
 table{
@@ -31,12 +33,14 @@ table{
 }
 
 .text-carousel{
-    width: 90%;
+    max-width: 50%;
     max-height: 90%;
-    float: left;
-    color: black;
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    color: white;
     text-align: center;
-    margin-left: 5%;
+    background: rgba(0, 0, 0, 0.6)
 }
 
 .text{
@@ -44,14 +48,17 @@ table{
     font-size: 2vw;
     font-family: 'Raleway', sans-serif;
     vertical-align: middle;
-    padding: 100px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 @media(max-width: 800px){
     .text{
         font-size: 12pt;
         font-size: 4vw;
-        padding: 10px 10px;
+
+    }
+    .text-carousel{
+        max-width: 100%;
     }
 }
 
@@ -62,10 +69,10 @@ table{
     margin: 0 auto;
 }
 
-.image-carousel:hover > .slick-prev{
+!.image-carousel:hover > .slick-prev{
     visibility: visible;
 }
-.image-carousel:hover > .slick-next{
+!.image-carousel:hover > .slick-next{
     visibility: visible;
 }
 
@@ -77,10 +84,91 @@ table{
     width: 100%;
 }
 
-#info-panel{
-    background: black;
-    color: white;
+#come-panel{
+    background: whitesmoke;
+    color: black;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 30pt;
+    padding: 40px 0px 40px 0px;
+}
+.button {
+    border: 1pt solid black;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+@media(max-width: 600px){
+    #come-panel{
+        font-size: 15pt;
+        font-size: 6vw;
+        padding: 20px 0px 20px 0px;
+    }
+    .button{
+        font-size: 10pt;
+        padding: 5px 5px;
+        margin-top: 10px;
+    }
+}
+
+#info-panel{
+    color: white;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#infotable{
+    display: inline-block;
+    table-layout: fixed;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.box{
+    text-align: center;
+    width: 25%;
+    padding: 30px 0px 30px 0px;
+}
+
+.tabletext{
+    padding: 0px 30px 0px 30px;
+}
+
+.glosstext{
+    color: #c42228;
+    font-size: 30pt;
+}
+
+.glosssubtext{
+    font-size: 15pt;
+    color: white;
+}
+
+.icon{
+    width: 20%;
+    filter: invert(100%);
+}
+
+@media(max-width: 1200px){
+    .box{
+        width: 50%;
+    }
+}
+@media(max-width: 600px){
+    .box{
+        width: 100%;
+    }
+}
+
+#footer-divider{
+    background-color: whitesmoke;
 }
 
 .card {
@@ -88,6 +176,11 @@ table{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background: white;
+}
+
+.nodec{
+    text-decoration: none;
+    color: white;
 }
 
 /* center text carousel */
