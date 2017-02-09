@@ -183,6 +183,10 @@ table{
     color: white;
 }
 
+.justify{
+    text-align: justify;
+}
+
 /* center text carousel */
 .slick-initialized .slick-slide {
     float: none;
