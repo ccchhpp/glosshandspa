@@ -4,7 +4,7 @@
     text-align: center;
 }
 #marquee-text:after{
-    content: "**VALENTINE'S DAY SPECIAL: $5 off any service under $50, $10 off any service over $50**";
+    content: "**$5 off any service under $50, $10 off any service over $50**";
 }
 #marquee-text {
     padding: 10px;
