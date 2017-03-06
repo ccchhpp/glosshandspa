@@ -4,7 +4,7 @@
     text-align: center;
 }
 #marquee-text:after{
-    content: "**$5 off any service under $50, $10 off any service over $50**";
+    content: "Call for an appointment or walk-in!";
 }
 #marquee-text {
     padding: 10px;
