@@ -90,7 +90,7 @@ table{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 30pt;
-    padding: 40px 0px 40px 0px;
+    padding: 80px 0px 80px 0px;
 }
 .button {
     border: 1pt solid black;
@@ -108,7 +108,7 @@ table{
     #come-panel{
         font-size: 15pt;
         font-size: 6vw;
-        padding: 20px 0px 20px 0px;
+        padding: 50px 0px 50px 0px;
     }
     .button{
         font-size: 10pt;
