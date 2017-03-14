@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Gloss Hand Spa - Contact</title>
+        <title>Gloss Hand Spa</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Gloss Hand Spa in La Jolla, CA. Manicures, pedicures, massages, waxing. Contact us to schedule an appointment! Walk-ins welcome.">
+        <meta name="description" content="Gloss Hand Spa in La Jolla, CA. We provide a luxurious spa experience. Manicures, pedicures, massages, waxing. Schedule an appointment! Walk-ins welcome.">
         
         <!-- font awesome -->
         <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -14,11 +14,10 @@
         
         <!-- css -->
         <link href="css/stylesheet.css?ver=1.1" rel="stylesheet">
-        <link href="css/page.css?ver=1.0" rel="stylesheet">
-        <link href="css/contact.css?ver=1." rel="stylesheet">
+        <link href="css/about.css?ver=1.0" rel="stylesheet">
         
         <!-- font -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
         
         <!-- favicon -->
         <link rel="icon" type="image/png" href="favicon.png" sizes="192x192">
@@ -43,36 +42,30 @@
                         <img class="img-responsive" src="images/logo-white.svg" alt="images/logo-full.png">
                     </a>
                 </div>
-                <div class="navbar" id="navbar">
+               <div class="navbar" id="navbar">
                     <div class="navbar-pages">
                         <a class="navbar-page" href="/">Home</a>
-                        <a class="navbar-page" href="/about">About</a>
+                        <a class="navbar-selected" href="/about">About</a>
                         <a class="navbar-page" href="/services">Services</a>
                         <a class="navbar-page" href="/gallery">Gallery</a>
-                        <a class="navbar-selected" href="/contact">Contact</a>
+                        <a class="navbar-page" href="/contact">Contact</a>
                     </div>
                 </div>
             </div>
             <div id="marquee">
                 <div id="marquee-text"></div>
             </div>
-            <div id="body-panel">
-                <div id="contact-info"> <br>
-                    <b>Contact Information</b><br>
-                    <a href="https://www.google.com/maps/place/7553+Girard+Ave,+La+Jolla,+CA+92037/@32.8415226,-117.2747597,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc03e3936f4167:0x6736c78ae6fecdd4!8m2!3d32.8415226!4d-117.272571" target="_blank"><i class="fa fa-home fa-lg"></i>7553 Girard Ave. La Jolla, California</a><br>
-                    <a href="tel:+1-858-412-4450"><i class="fa fa-phone fa-lg"></i>(858) 412-4450</a> <br>
-                    <a href="mailto:glosshandspa@gmail.com"><i class="fa fa-envelope"></i>glosshandspa@gmail.com</a><br>
-                    
-                    <br><b>Hours</b><br>
-                    Mon - Fri | 9am - 7pm<br>
-                    Sat | 9am - 6pm<br>
-                    Sun | 10am - 6pm <br>
-                    <br>
-                    <i>Call us to schedule an appointment! <br>Walk-ins welcome.</i>
-                </div>
-                <div id="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.140834443319!2d-117.27475968429927!3d32.84152258095266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc03e3936f4167%3A0x6736c78ae6fecdd4!2s7553+Girard+Ave%2C+La+Jolla%2C+CA+92037!5e0!3m2!1sen!2sus!4v1483074316750" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
+            <div id="about-panel">
+                <div id="about-title"><b>About Us</b></div>
+                <p>
+                    Here at Gloss, we offer a luxurious, relaxing spa experience. Located in the heart of beautiful La Jolla, you can walk in from a sunny beach day and get yourself pampered to your heart’s delight. Spoil yourself with an indulging spa session with our trained techs who will make sure you are comfortable and receive the best service. Your satisfaction (and beautiful nails) are our top priority. <br><br>
+
+                    Opened January 21, 2017, Gloss is the creation of owner Tu, and wife Sara. Tu was tired of the same old, run-of-the-mill salons that only do a disservice to their guests, and he wanted a change. With Tu’s 30 years of customer relations experience and Sara’s 20 years in the nail industry, the two came up with Gloss to offer the best quality treatment and service to every guest that walks in for a visit. <br><br>
+
+                    A trip to Gloss will change the way you do spa day. True to its name, Gloss is the finest hand and feet spa in the area. We don’t cut corners, making sure to dedicate our time to each guest, using only the highest-grade products, from organic scrubs to hotel-quality towels. Relax with ease, as all our files are one-time-use and our tools and equipment are sterilized in an autoclave machine to provide a safe and hygienic environment.<br><br>
+
+                    Come visit and treat yourself like a celebrity at Gloss! All the glamour of Hollywood with the relaxing mood of La Jolla. We will be sure to accommodate all your needs, and we offer a variety of refreshments, as well as wine to make your visit comfortable and enjoyable. Have a glass on us!
+                </p>
             </div>
         </div>
         <div id="footer-panel">
@@ -96,7 +89,6 @@
                     </a>
                 </div>
             </div>
-        
         <!-- Fixed navbar on scroll -->
         <script>
             $(document).ready(function(){
@@ -110,6 +102,39 @@
                     }
                 })
             })
+        </script>
+        
+        <!-- slick -->
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.text-carousel').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    asNavFor: '.image-carousel',
+                    speed: 1000,
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                });
+            });
+            $(document).ready(function(){
+                $('.image-carousel').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: false,
+                    fade: true,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    speed: 1000,
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                    asNavFor: '.text-carousel'
+                });
+            });
         </script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-/* SITE-WIDE MARQUEE */
+/* SITE-WIDE MARQUEE 
 #marquee{
     background: #c42228;
     text-align: center;
@@ -73,15 +73,16 @@ html, body {
 
 .navbar-pages > a {
     display: inline;
-    margin: 5px;
+    margin: 10px;
     font-size: 15pt;
 }
 
 /* mobile */
-@media (max-width: 400px){
+@media (max-width: 450px){
     .navbar-pages > a{
         font-size: 13pt;
-        font-size: calc(10px + 2vw);
+        font-size: 4vw;
+        margin: 7px;
     }
 }
 
