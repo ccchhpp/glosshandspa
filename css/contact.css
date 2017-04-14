@@ -1,10 +1,15 @@
+#body-panel{
+    margin-top: 20px;
+}
+
 #body-panel > iframe{
     margin: auto;
 }
 
 #contact-info{
     float: left;
-    width: 50%;
+    width: 48%;
+    margin-left: 2%;
 }
 
 #map{
@@ -31,8 +36,13 @@
 }
 
 @media (max-width: 600px){
+    #body-panel{
+        margin-top: 0px;
+    }
+
     #contact-info{
         width: 100%;
+        margin-left: 0%;
     }
     
     #map{
