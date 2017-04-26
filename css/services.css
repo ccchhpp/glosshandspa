@@ -25,7 +25,7 @@ ul{
     max-width: 500px;
     margin: 20px;
     align-self: flex-start;
-    cursor: default;
+    cursor: pointer;
 }
 
 .menu-section > a{
