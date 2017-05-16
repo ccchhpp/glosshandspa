@@ -122,6 +122,7 @@ table{
     background: black;
     display: flex;
     flex-wrap: wrap;
+    padding: 50px 0px 50px 0px;
 }
 
 #infotable{
