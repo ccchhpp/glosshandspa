@@ -1,5 +1,5 @@
 /* SITE-WIDE MARQUEE */
-#marquee{
+/*#marquee{
     background: #c42228;
     text-align: center;
 }
@@ -13,7 +13,7 @@
     #marquee-text{
         font-size: 10pt;
     }
-}
+}*/
 /* END OF MARQUEE */
 
 
