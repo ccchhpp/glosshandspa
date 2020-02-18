@@ -1,10 +1,10 @@
 /* SITE-WIDE MARQUEE */
-/*#marquee{
+#marquee{
     background: #c42228;
     text-align: center;
 }
 #marquee-text:after{
-    content: "HOLIDAY PROMOTION: $5 off any services $25+, $10 off any services $75+";
+    content: "ATT customers having issues calling the store, call (858) 265-8791";
 }
 #marquee-text {
     padding: 10px;
@@ -13,7 +13,7 @@
     #marquee-text{
         font-size: 10pt;
     }
-}*/
+}
 /* END OF MARQUEE */
 
 
