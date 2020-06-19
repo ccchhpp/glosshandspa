@@ -1,10 +1,10 @@
 /* SITE-WIDE MARQUEE */
-/*#marquee{
+#marquee{
     background: #c42228;
     text-align: center;
 }
 #marquee-text:after{
-    content: "ATT customers having issues calling the store, call (858) 265-8791";
+    content: "To limit the spread of COVID-19, we cannot accept walk-ins. Please call to schedule an appointment.";
 }
 #marquee-text {
     padding: 10px;
