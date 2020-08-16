@@ -4,7 +4,7 @@
     text-align: center;
 }
 #marquee-text:after{
-    content: "To limit the spread of COVID-19, we cannot accept walk-ins. Please call to schedule an appointment.";
+    content: "Our salon is currently closed to limit the spread of COVID-19. Off-site, full service appointments are available. Please call or text (858) 265-8791 to schedule an appointment.";
 }
 #marquee-text {
     padding: 10px;

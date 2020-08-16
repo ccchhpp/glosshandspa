@@ -1,0 +1,13 @@
+#about-panel {
+    margin: 10px 10% 10px 10%;
+    color: black;
+}
+
+#about-title{
+    font-size: 20pt;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+
+}
