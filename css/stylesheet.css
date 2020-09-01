@@ -4,7 +4,8 @@
     text-align: center;
 }
 #marquee-text:after{
-    content: "Our salon is currently closed to limit the spread of COVID-19. Off-site, full service appointments are available. Please call or text (858) 265-8791 to schedule an appointment.";
+    content: "We are currently OPEN. However, to limit the spread of COVID-19, walk-ins are not accepted and an appointment must be made. Please call or message us through Yelp to schedule an appointment.";
+/*Our salon is currently closed to limit the spread of COVID-19. Off-site, full service appointments are available. Please call or text (858) 265-8791 to schedule an appointment.*/
 }
 #marquee-text {
     padding: 10px;
